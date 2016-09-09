@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^/?$ index.php
+RewriteRule ^hello?$ hello.php
+RewriteRule ^hello/([0-9]+)/([0-9]+) hello.php?id=$1&uid=$2
+RewriteRule ^hello/([0-9]+) hello.php?id=$1
